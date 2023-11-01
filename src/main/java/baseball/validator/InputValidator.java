@@ -14,7 +14,7 @@ public class InputValidator {
     public static final int MAX_INPUT_NUMBER_LENGTH = 3;
 
     public static void validateInputLength(final String input) {
-        if (input.length() != 3) {
+        if (input.length() != MAX_INPUT_NUMBER_LENGTH) {
             throw new IllegalArgumentException(WRONG_INPUT_NUMBERS_LENGTH_MESSAGE);
         }
     }
