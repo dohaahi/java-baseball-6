@@ -8,14 +8,13 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class BallNumbers {
-    private final RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
     private List<Integer> numberList = new ArrayList<>();
 
     public List<Integer> generateBaseball() {
         Set<Integer> numbers = new HashSet<>();
 
         while (numbers.size() < 3) {
-            int number = randomNumberGenerator.generate();
+            int number = RandomNumberGenerator.generate();
             numbers.add(number);
         }
 
